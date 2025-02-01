@@ -1,0 +1,170 @@
+
+    
+    body {
+     margin:0 50px;
+    background-color: #f3ddf3;
+    }
+    
+    .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    }
+
+.row{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+
+
+
+    section{
+        background-color: white;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        padding: 10px 8px;
+        margin: 10px 10px;
+    }
+   
+.small-row{
+    display: flex;
+    gap: 10px;
+}
+
+
+    .container{
+   background-color: rgba(128, 128, 128,0.5);
+   width: 100px;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    }
+
+    .purple-container{
+        background-color: blueviolet;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+
+   
+    .box{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    transition: all linear 1s;
+    }
+
+    .wrapper > .row:first-child > section:first-child .container:hover .box {
+        transform: rotate(45deg);
+    }
+    
+    .row:nth-child(1) section:nth-child(2) .container:hover .box {
+        transform: rotatex(45deg);
+    }
+    .row:nth-child(1) section:nth-child(3) .container:hover .box {
+        transform: rotateY(45deg);
+    }
+    .row:nth-child(1) section:nth-child(4) .container:hover .box {
+        transform: scale(1.5);
+    }
+    .row:nth-child(1) section:nth-child(5) .container:hover .box {
+        transform: scaleX(1.5);
+    }
+    .row:nth-child(2) section:nth-child(1) .container:hover .box {
+        transform: scaleY(1.5);
+    }
+    .row:nth-child(2) section:nth-child(2) .container:hover .box {
+        transform: skewX(25deg);
+    }
+    .row:nth-child(2) section:nth-child(3) .container:hover .box {
+        transform:skewY(25deg);
+    }
+    .row:nth-child(2) section:nth-child(4) .container:hover .box {
+        transform: translate(40px,30px);
+    }
+    .row:nth-child(2) section:nth-child(5) .container:hover .box {
+        transform: translate(40px);
+    }
+   .small-row:nth-child(3) section:nth-child(1) .container:hover .box{
+    transform: translateY(40px);
+   }
+   .small-row:nth-child(3) section:nth-child(2) .container:hover .box{
+    transform: skewY(45deg) scale(1.3) ;
+   }
+   .small-row:nth-child(4) section:nth-child(2) .container:hover .box{
+    transform: perspective(100px) rotateY(60deg)
+   }
+   .small-row:nth-child(4) section:nth-child(1) .container:hover .box{
+    transform: perspective(100px) rotatex(60deg)
+   }
+    .row:nth-child(5) section:nth-child(1) .container:hover .box {
+     transform:rotate(25deg);
+    transform-origin:top right;
+    }
+    .row:nth-child(5) section:nth-child(2) .container:hover .box {
+        transform:rotate(25deg);
+       transform-origin:bottom left;
+       }
+       .row:nth-child(5) section:nth-child(3) .container:hover .box {
+        transform:perspective(500px) rotatex(45deg);
+        transform-origin: bottom;
+       }
+       .row:nth-child(5) section:nth-child(4) .container:hover .box {
+        transform:perspective(500px) rotatex(50deg);
+        transform-origin: top;
+       }
+       .row:nth-child(5) section:nth-child(5) .container:hover .box {
+        transform:perspective(500px) rotateY(45deg);
+        transform-origin: left;
+       }
+       .row:nth-child(6) section:nth-child(5) .purple-container:hover .box {
+        transform: translateX(100px) scale(1); 
+        opacity: 0.5;
+       }
+       .row:nth-child(6) section:nth-child(4) .purple-container:hover .box {
+        transform: translatex(-100px) scale(1); 
+        opacity: 0.5;
+        
+       }
+       .row:nth-child(6) section:nth-child(1) .container:hover .box {
+        transform:perspective(500px) rotateY(45deg);
+        transform-origin: right;
+       }
+       .row:nth-child(6) section:nth-child(2) .purple-container:hover .box {
+        transform-origin: top right;
+        opacity: 0.5;
+        transform: scale(1.5);
+       }
+       .row:nth-child(6) section:nth-child(3) .purple-container:hover .box {
+        transform-origin: bottom left;
+        opacity: 0.5;
+        transform: scale(1.5);
+       }
+
+       .small-row:nth-child(7) section:nth-child(1) .purple-container:hover .box{
+        transform: translateY(100px) scale(1); 
+        opacity: 0.5;
+       }
+       .small-row:nth-child(7) section:nth-child(2) .purple-container:hover .box{
+        transform: translateY(-100px) scale(1); 
+        opacity: 0.5;
+       }
+    
+
+    
+    
+    
+    
